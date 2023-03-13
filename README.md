@@ -25,8 +25,11 @@ Create a new repository using this template.
 ![image](https://user-images.githubusercontent.com/5336369/224746152-0416a862-891a-4fe1-b9dd-09add25a6cc0.png)
 
 
-* You can now make code changes to your extension and select `Debug> Reload With Extensions` to test the new code changes.
-* If you have an extension loaded, select `Debug> Reload With Extensions` when you are done developing the extension.
+* You can now make code changes to your theme and live preview theme changes as you edit your theme css.
+
+![theme dev](https://user-images.githubusercontent.com/5336369/222974377-e3c04920-dd2b-4eab-be35-57df403ff249.gif)
+* You can also select `Debug> Reload With Extensions` to test the new code changes.
+* If you have an theme loaded, select `Debug> Reload With Extensions` when you are done developing the theme.
 
 ![image](https://user-images.githubusercontent.com/5336369/224747590-556dff1d-5b29-41c3-88a0-3ce72ab643d0.png)
 
@@ -35,5 +38,5 @@ Create a new repository using this template.
 Please go to https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes for more documentation/community support links.
 
 # Publishing your theme to the repository
-Once you have built your extension/theme, you can publish the extension to phcode.dev extension repository in a single step directly from this repo.
+Once you have built your extension/theme, you can publish the theme to phcode.dev extension repository in a single step directly from this repo.
 Please see publish section in this link for more details: https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes
