@@ -1,0 +1,89 @@
+/* Add the theme css/less here. You can either provide pure CSS or LESS(see https://lesscss.org/#overview) for themes.
+Dark Theme: In package.json set the theme.dark property to true if your theme is dark, else false.*/
+
+/*
+https://github.com/phcode-dev/phoenix/blob/main/src/extensions/default/DarkTheme/main.less
+Refer the above link for the default dark theme less CSS Example
+
+Below is only a subset of css styles that can be changed.
+See detailed docs in https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes
+*/
+
+
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+	background: #273445;
+	color: #6cbf33;
+}
+
+.CodeMirror-cursor {
+	border-left: 2px solid #eff1ed !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-bottom: 1px solid #b3bfb8 !important;
+    border-left: none !important;
+}
+
+.CodeMirror-gutters {
+	background: #1a212c;
+	border-right: 0;
+}
+
+.CodeMirror-linenumber {
+	color: rgba(246, 246, 246, 0.62);
+}
+
+/* selection of code */
+.CodeMirror-selected {
+	background: #2f4550;
+}
+.CodeMirror .CodeMirror-selected {
+    background: rgba(47, 69, 80, 0.35);
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #2f4550;
+}
+/* Matching */
+
+.CodeMirror-matchingbracket {
+    background: transparent !important;
+	border-bottom: 3px solid #52b788 !important;
+    color: #f6f9fa !important;
+}
+
+.CodeMirror-matchingtag {
+    background: #4f5763 !important;
+	border-bottom: 3px solid rgb(82, 183, 136, 0.7) !important;
+}
+
+/* Active Line */
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-nonmatchingbracket {
+	color: #60862b !important;
+}
+
+.CodeMirror-activeline-background {
+	background: #150a49 !important;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	color: #ffffff;
+	background-color: #2f4550 !important;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
+	color: #f6f9fa;
+}
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: #272B31;
+}
+
+#image-holder {
+    color: #a1cb84;
+}
