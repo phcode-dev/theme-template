@@ -9,6 +9,10 @@
     "engines": {
         "brackets": ">=2.0.0"
     },
+    "categories": "demo",
+    "keywords": [
+        "phcode", "theme", "demo"
+    ],
     "theme": {
         "file": "my-theme.less",
         "dark": true
