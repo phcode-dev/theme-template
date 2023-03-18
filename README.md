@@ -29,7 +29,7 @@ Create a new repository using this template.
 
 ![theme dev](https://user-images.githubusercontent.com/5336369/222974377-e3c04920-dd2b-4eab-be35-57df403ff249.gif)
 * You can also select `Debug> Reload With Extensions` to test the new code changes.
-* If you have an theme loaded, select `Debug> Reload With Extensions` when you are done developing the theme.
+* When you are done developing the extension/theme, select `Debug> Unload Project As Extension` to unload the extension/theme.
 
 ![image](https://user-images.githubusercontent.com/5336369/224747590-556dff1d-5b29-41c3-88a0-3ce72ab643d0.png)
 
