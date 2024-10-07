@@ -51,8 +51,8 @@ Create a new repository using this template.
 
 # Detailed Documentation
 
-Please go to https://docs.phcode.dev/api/writing-ext-themes for more documentation/community support links.
+Please go to [https://docs.phcode.dev/api/writing-ext-themes](https://docs.phcode.dev/api/writing-ext-themes) for more documentation/community support links.
 
 # Publishing your theme to the repository
 Once you have built your extension/theme, you can publish the theme to phcode.dev extension repository in a single step directly from this repo.
-Please see publish section in this link for more details: https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes
+Please see publish section in this link for more details: [Writing extension and themes](https://docs.phcode.dev/api/writing-ext-themes)
