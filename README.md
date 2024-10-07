@@ -2,7 +2,7 @@
 
 Quick start and create a new theme by using this template. Follow the below 4 steps:
 
-Refer this [link](https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes) for detailed extension docs after following the below steps:
+Refer this [link](https://docs.phcode.dev/api/writing-ext-themes) for detailed extension docs after following the below steps:
 
 ## step 1
 
@@ -51,7 +51,7 @@ Create a new repository using this template.
 
 # Detailed Documentation
 
-Please go to https://github.com/phcode-dev/phoenix/wiki/How-To-Write-Extensions-And-Themes for more documentation/community support links.
+Please go to https://docs.phcode.dev/api/writing-ext-themes for more documentation/community support links.
 
 # Publishing your theme to the repository
 Once you have built your extension/theme, you can publish the theme to phcode.dev extension repository in a single step directly from this repo.
