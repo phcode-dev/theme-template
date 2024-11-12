@@ -55,4 +55,4 @@ Please go to [https://docs.phcode.dev/api/creating-themes](https://docs.phcode.d
 
 # Publishing your theme to the repository
 Once you have built your theme, you can publish the theme to phcode.dev extension store in a single step directly from this repository.
-Please see publish section in this link for more details: [Writing extension and themes](https://docs.phcode.dev/api/publishing-extensions)
+Please see publish section in this link for more details: [Publishing extension and themes](https://docs.phcode.dev/api/publishing-extensions)
