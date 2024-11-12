@@ -2,7 +2,7 @@
 
 Quick start and create a new theme by using this template. Follow the below 4 steps:
 
-Refer this [link](https://docs.phcode.dev/api/writing-ext-themes) for detailed extension docs after following the below steps:
+Refer this [link](https://docs.phcode.dev/api/creating-themes) for detailed theme documentation after following the below steps:
 
 ## step 1
 
@@ -15,7 +15,7 @@ Create a new repository using this template.
 
 ## step 3
 
-* Clone your GitHub Repo created from `step 2`. See [this link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to lean how to clone a repository from GitHub.
+* Clone your GitHub Repository created from `step 2`. See [this link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to learn how to clone a repository from GitHub.
 * Edit `package.json` file in template, make sure to update the following fields accordingly:
 
 | Field       | Description                                                            |
@@ -51,8 +51,8 @@ Create a new repository using this template.
 
 # Detailed Documentation
 
-Please go to [https://docs.phcode.dev/api/writing-ext-themes](https://docs.phcode.dev/api/writing-ext-themes) for more documentation/community support links.
+Please go to [https://docs.phcode.dev/api/creating-themes](https://docs.phcode.dev/api/creating-themes) for more documentation/community support links.
 
 # Publishing your theme to the repository
-Once you have built your extension/theme, you can publish the theme to phcode.dev extension repository in a single step directly from this repo.
-Please see publish section in this link for more details: [Writing extension and themes](https://docs.phcode.dev/api/writing-ext-themes)
+Once you have built your theme, you can publish the theme to phcode.dev extension store in a single step directly from this repository.
+Please see publish section in this link for more details: [Writing extension and themes](https://docs.phcode.dev/api/publishing-extensions)
