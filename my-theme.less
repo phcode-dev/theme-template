@@ -8,397 +8,426 @@
 /* Core UI Colors
  * These variables control the fundamental visual elements of the editor
  */
- @background: #000;
- @foreground: #cdcdcd; // (Not for font color, but UI elements)
- 
- @comment: #999;
- @comment-active: #aaa; // Applied when cursor is on a commented line
- 
- @cursor: #cdcdcd;
- 
- /* Active Line Highlighting */
- @activeline-background: #232323;
- @activeline-foreground: #cdcdcd;
- 
- /* Selected Code Highlighting */
- @selected-background: #232323;
- 
- /* UI Component Colors */
- // Title Bar
- @titlebar-background: #000;
- @titlebar-foreground: #cdcdcd;
- 
- // Status Bar
- @status-bar-background: #000;
- @status-bar-foreground: #cdcdcd;
- 
- // Sidebar - Houses file tree and working files
- @sidebar-background: #000;
- @sidebar-foreground: #cdcdcd;
- @sidebar-active-file-foreground: #6bbeff; // Highlights the current working file (Try not to modify unless your color obscure the default color)
- 
- // Toolbar - Vertical panel on the right
- @toolbar-background: #000;
- 
- /* Editor Gutter 
+@background: #000;
+@foreground: #cdcdcd; // (Not for font color, but UI elements)
+
+@comment: #999;
+@comment-active: #aaa; // Applied when cursor is on a commented line
+
+@cursor: #cdcdcd;
+
+/* Active Line Highlighting */
+@activeline-background: #232323;
+@activeline-foreground: #cdcdcd;
+
+/* Selected Code Highlighting */
+@selected-background: #232323;
+
+/* UI Component Colors */
+// Title Bar
+@titlebar-background: #000;
+@titlebar-foreground: #cdcdcd;
+
+// Status Bar
+@status-bar-background: #000;
+@status-bar-foreground: #cdcdcd;
+
+// Sidebar - Houses file tree and working files
+@sidebar-background: #000;
+@sidebar-foreground: #cdcdcd;
+@sidebar-active-file-background: #000;
+@sidebar-active-file-foreground: #6bbeff; // Highlights the current working file (Try not to modify unless your color obscure the default color)
+
+// the toggle buttons in the sidebar for the git branch option and the project option
+@git-branch-toggle-bg-sidebar: #000;
+@git-branch-toggle-fg-sidebar: #cdcdcd;
+@project-dropdown-toggle-bg: #000;
+@project-dropdown-toggle-fg: #cdcdcd;
+
+// Toolbar - Vertical panel on the right
+@toolbar-background: #000;
+
+/* Editor Gutter
   * Controls the area containing line numbers and code folding indicators
   */
- @gutter-background: #000;
- @active-gutter-background: #232323;
- @line-number: #999;
- @active-line-number: #aaa;
- 
- @border: #676767; // Used for UI element separation
- 
- /* Search Highlighting
+@gutter-background: #000;
+@active-gutter-background: #232323;
+@line-number: #999;
+@active-line-number: #aaa;
+
+@border: #676767; // Used for UI element separation
+
+/* Search Highlighting
   * These colors are used when using the find/replace functionality
   */
- @searching-background: #f5ee92;
- @searching-foreground: #4e4225;
- @searching-match-background: #f5ee92;
- @searching-match-foreground: #4e4225;
- 
- /* Brackets Highlighting
+@searching-background: #f5ee92;
+@searching-foreground: #4e4225;
+@searching-match-background: #f5ee92;
+@searching-match-foreground: #4e4225;
+
+/* Brackets Highlighting
   * These colors are also used for Matching-Tags
   */
- @matchingbracket-background: #000;
- @matchingbracket-color: #fff;
- @active-matchingbracket-color: #fff;
- @active-matchingbracket-background: #232323;
- 
- /* Syntax Highlighting
+@matchingbracket-background: #000;
+@matchingbracket-color: #fff;
+@active-matchingbracket-color: #fff;
+@active-matchingbracket-background: #232323;
+
+/* Syntax Highlighting
   * These variables control the colors of different code elements in the editor.
   * Customizing these will change how your code looks.
   */
- 
- @keyword: #cdcdcd; // Programming keywords like 'function', 'const', 'if', 'for'
- @definition: #cdcdcd; // Function, variable, class names when they're being defined
- @variable: #cdcdcd; // Global/Predefined variables in your code
- @variable2: #cdcdcd; // Local variables
- @variable3: #cdcdcd; // used to over write any default colors
- @string: #cdcdcd; // Text between quotes: "example" or 'example'
- @string2: #cdcdcd; // Special string variants like regex literals and LaTeX math
- @tag: #cdcdcd; // HTML/XML tags like <div> or <body>
- @type: #cdcdcd; // Data types in statically typed languages like 'int', 'char', 'bool'
- @number: #cdcdcd; // Numeric values: 42, 1.5, 0xFF
- @operator: #cdcdcd; // Mathematical/logical operators: +, -, !, ===
- @meta: #cdcdcd; // Meta characters in regex and HTML doctype, include/import statements
- @attribute: #cdcdcd; // HTML attributes like 'class' or 'src'
- @property: #cdcdcd; // Object properties and CSS properties
- @link: #cdcdcd; // Hyperlinks in markdown
- @header: #cdcdcd; // Markdown headers (#, ##, etc.)
- @error: #f7768e; // Text that represents an error in your code
- @error-background: #f7768e1a; // Background highlight for error text
- 
- /* ------------------------------------------------------------------- */
- /* Base Styles
+
+@keyword: #cdcdcd; // Programming keywords like 'function', 'const', 'if', 'for'
+@definition: #cdcdcd; // Function, variable, class names when they're being defined
+@variable: #cdcdcd; // Global/Predefined variables in your code
+@variable2: #cdcdcd; // Local variables
+@variable3: #cdcdcd; // used to over write any default colors
+@string: #cdcdcd; // Text between quotes: "example" or 'example'
+@string2: #cdcdcd; // Special string variants like regex literals and LaTeX math
+@tag: #cdcdcd; // HTML/XML tags like <div> or <body>
+@type: #cdcdcd; // Data types in statically typed languages like 'int', 'char', 'bool'
+@number: #cdcdcd; // Numeric values: 42, 1.5, 0xFF
+@operator: #cdcdcd; // Mathematical/logical operators: +, -, !, ===
+@meta: #cdcdcd; // Meta characters in regex and HTML doctype, include/import statements
+@attribute: #cdcdcd; // HTML attributes like 'class' or 'src'
+@property: #cdcdcd; // Object properties and CSS properties
+@link: #cdcdcd; // Hyperlinks in markdown
+@header: #cdcdcd; // Markdown headers (#, ##, etc.)
+@error: #f7768e; // Text that represents an error in your code
+@error-background: #f7768e1a; // Background highlight for error text
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* Base Styles
   * The following CSS rules implement the theme using the variables defined above.
   * Modify with CAUTION. Only Modify if necessary.
   */
- // Styles the empty editor state
- .content #editor-holder .not-editor {
-	 background-color: @background;
- }
- 
- // Styles the header of each editor pane when multiple files are open
- .content #editor-holder .pane-header {
-	 background-color: @background;
-	 color: @foreground;
- }
- 
- /* Sidebar Styling */
- // Applies consistent background to all sidebar elements
- .main-view #sidebar,
- .main-view #sidebar #mainNavBar,
- .main-view #sidebar #working-set-list-container,
- .main-view #sidebar #working-set-list-container .working-set-view-active,
- .main-view #sidebar #working-set-list-container .working-set-header,
- .main-view #sidebar #working-set-list-container .working-set-header-title,
- .main-view #sidebar #working-set-list-container .sidebar-selection,
- .main-view #sidebar #project-files-container,
- .main-view #sidebar #project-files-header,
- .main-view #sidebar #project-files-header #project-dropdown-toggle {
-	 background-color: @sidebar-background;
- }
- 
- // Creates a visual separator between working files and project files
- .main-view #sidebar #working-set-list-container {
-	 border-bottom: 1px solid @border;
- }
- 
- // Removes default selection border in sidebar
- .main-view #sidebar #working-set-list-container .sidebar-selection {
-	 border: none;
- }
- 
- /* Sidebar Text Styling */
- // Sets color for all text elements in the sidebar
- .main-view #sidebar #project-files-container ul li a span,
- .main-view #sidebar #project-files-header #project-dropdown-toggle span,
- .main-view #sidebar #working-set-list-container .working-set-view .working-set-header span,
- .main-view #sidebar #working-set-list-container .working-set-view .open-files-container ul li a span {
-	 color: @sidebar-foreground;
- }
- 
- // Highlights the currently selected file and PhCode.io link
- .main-view #sidebar #working-set-list-container .working-set-view .open-files-container ul .selected a span,
- .main-view #sidebar #mainNavBar #phcode-io-main-nav {
-	 color: @sidebar-active-file-foreground;
- }
- 
- /* Status Bar */
- // Ensures consistent styling across all status bar elements
- #status-bar,
- #status-bar #status-info,
- #status-bar #status-info #status-file,
- #status-bar #status-indicators,
- #status-bar #status-indicators #status-overwrite {
-	 background-color: @status-bar-background;
-	 color: @status-bar-foreground;
- }
- 
- /* Toolbar */
- #main-toolbar,
- #main-toolbar #plugin-icons-bar {
-	 background-color: @toolbar-background;
- }
- 
- /* Title Bar */
- .content #titlebar {
-	 background-color: @titlebar-background;
- }
- 
- .content #titlebar .nav li a {
-	 color: @titlebar-foreground;
- }
- 
- /* Main Editor Window */
- // Adds a separator between sidebar and editor content
- .content {
-	 border-left: 1px solid @border;
- }
- 
- // Sets the main editor background and text color
- .CodeMirror,
- .CodeMirror-scroll {
-	 background-color: @background;
-	 color: @foreground;
- }
- 
- // Styles for code selection
- .CodeMirror-selected {
-	 background-color: @selected-background !important;
- }
- 
- // Styles line numbers
- .CodeMirror-linenumber {
-	 color: @comment;
- }
- 
- // Code syntax highlighting
- .cm-comment {
-	 color: @comment !important;
- }
- 
- .cm-keyword {
-	 color: @keyword;
- }
- 
- .cm-atom {
-	 color: @definition;
- }
- 
- .cm-number {
-	 color: @number;
- }
- 
- span.cm-def {
-	 color: @definition;
- }
- 
- span.cm-variable {
-	 color: @variable;
- }
- 
- span.cm-variable-2 {
-	 color: @variable2;
- }
- 
- span.cm-variable-3 {
-	 color: @variable3;
- }
- 
- .cm-link,
- .cm-link.cm-variable-2 {
-	 color: @link !important;
- }
- 
- .cm-string.cm-variable-2.cm-url {
-	 color: @link;
- }
- 
- .cm-operator {
-	 color: @operator;
- }
- 
- .cm-string {
-	 color: @string;
- }
- 
- .cm-string-2 {
-	 color: @string2;
- }
- 
- .cm-meta {
-	 color: @meta;
- }
- 
- .cm-builtin {
-	 color: @definition;
- }
- 
- .cm-tag {
-	 color: @tag;
- }
- 
- .cm-attribute {
-	 color: @attribute;
- }
- 
- .cm-header {
-	 color: @header;
- }
- 
- .cm-hr {
-	 color: @comment;
- }
- 
- .cm-link {
-	 color: @operator;
- }
- 
- // Error highlighting
- .cm-error {
-	 color: @error;
-	 background-color: @error-background;
- }
- 
- .cm-qualifier {
-	 color: @variable;
- }
- 
- .cm-property {
-	 color: @property;
- }
- 
- .cm-quote {
-	 color: @keyword;
- }
- 
- .cm-em {
-	 color: @definition;
- }
- 
- .cm-strong {
-	 color: @number;
- }
- 
- .cm-image {
-	 color: @tag;
- }
- 
- .cm-image-marker {
-	 color: @definition;
- }
- 
- .cm-type {
-	 color: @type;
- }
- 
- // Styles for matching HTML tags
- .CodeMirror-matchingtag {
-	 background-color: @matchingbracket-background;
-	 color: @matchingbracket-color !important;
- }
- 
- // Enhanced visibility for matching tags in the active line
- .CodeMirror-activeline .CodeMirror-matchingtag {
-	 color: @active-matchingbracket-color !important;
-	 background-color: @active-matchingbracket-background;
- }
- 
- // Styles for matching brackets (parentheses, square brackets, etc.)
- .CodeMirror-matchingbracket {
-	 outline: none;
-	 border-bottom: 1px solid @matchingbracket-color;
-	 color: @matchingbracket-color !important;
-	 background-color: @matchingbracket-background;
- }
- 
- .CodeMirror-activeline .CodeMirror-matchingbracket {
-	 color: @active-matchingbracket-color !important;
-	 background-color: @active-matchingbracket-background;
- }
- 
- // Code folding marker styling
- .CodeMirror-foldmarker {
-	 background-color: @background;
-	 color: @foreground;
-	 border: none;
- }
- 
- .CodeMirror-activeline .CodeMirror-foldmarker {
-	 background-color: @activeline-background;
-	 color: @activeline-foreground;
-	 border: none;
- }
- 
- // Active line comment color
- .CodeMirror-activeline .cm-comment {
-	 color: @comment-active !important;
- }
- 
- // Cursor styling for normal mode
- .CodeMirror .CodeMirror-cursor {
-	 border-left: 1px solid @cursor !important;
- }
- 
- // Cursor styling for overwrite (insert) mode
- .CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
-	 border-left: none !important;
-	 border-bottom: 1px solid @cursor;
-	 width: 1.2ex;
- }
- 
- // Gutter styling (area with line numbers)
- .CodeMirror .CodeMirror-gutters {
-	 background-color: @gutter-background;
-	 border-right: 0;
- }
- 
- .CodeMirror-gutter-elt {
-	 color: @line-number !important;
- }
- 
- .CodeMirror-activeline .CodeMirror-gutter-elt {
-	 background-color: @active-gutter-background !important;
-	 color: @active-line-number !important;
- }
- 
- // Active line background
- .CodeMirror-activeline-background {
-	 background-color: @activeline-background !important;
- }
- 
- // Styles for search results
- .CodeMirror-searching {
-	 background-color: @searching-background !important;
-	 color: @searching-foreground !important;
- }
- 
- // Highlights the current search match
- .CodeMirror-searching.searching-current-match {
-	 background-color: @searching-match-background !important;
-	 color: @searching-match-foreground !important;
- }
- 
+// Styles the empty editor state
+.content #editor-holder .not-editor {
+	background-color: @background;
+}
+
+// Styles the header of each editor pane when multiple files are open
+.content #editor-holder .pane-header {
+	background-color: @background;
+	color: @foreground;
+}
+
+/* Sidebar Styling */
+// Applies consistent background to all sidebar elements
+.main-view #sidebar,
+.main-view #sidebar #mainNavBar,
+.main-view #sidebar #working-set-list-container,
+.main-view #sidebar #working-set-list-container .working-set-view-active,
+.main-view #sidebar #working-set-list-container .working-set-header,
+.main-view #sidebar #working-set-list-container .working-set-header-title,
+.main-view #sidebar #working-set-list-container .sidebar-selection,
+.main-view #sidebar #project-files-container,
+.main-view #sidebar #project-files-header {
+	background-color: @sidebar-background;
+}
+
+.main-view #sidebar #project-files-header #project-dropdown-toggle,
+.main-view #sidebar #project-files-header #project-dropdown-toggle span {
+	background-color: @project-dropdown-toggle-bg;
+	color: @project-dropdown-toggle-fg;
+}
+
+// Creates a visual separator between working files and project files
+.main-view #sidebar #working-set-list-container {
+	border-bottom: 1px solid @border;
+}
+
+// Removes default selection border in sidebar
+.main-view #sidebar #working-set-list-container .sidebar-selection {
+	border: none;
+}
+
+/* Sidebar Text Styling */
+// Sets color for all text elements in the sidebar
+.main-view #sidebar #project-files-container ul li a span,
+.main-view #sidebar #working-set-list-container .working-set-view .working-set-header span,
+.main-view #sidebar #working-set-list-container .working-set-view .open-files-container ul li a span {
+	color: @sidebar-foreground;
+}
+
+// Highlights the currently selected file and PhCode.io link
+.main-view #sidebar #working-set-list-container .working-set-view .open-files-container ul .selected a span,
+.main-view #sidebar #mainNavBar #phcode-io-main-nav {
+	color: @sidebar-active-file-foreground;
+}
+
+// Style the background of the currently active file in the file explorer area
+.main-view #sidebar #project-files-container .jstree-clicked,
+.main-view #sidebar #project-files-container .filetree-selection-extension {
+	background-color: @sidebar-active-file-background;
+}
+
+
+// For the git branch button that appears in the sidebar
+.main-view #sidebar #project-files-header #git-branch-dropdown-toggle {
+	background-color: @git-branch-toggle-bg-sidebar;
+	color: @git-branch-toggle-fg-sidebar;
+}
+
+
+
+
+/* Status Bar */
+// Ensures consistent styling across all status bar elements
+#status-bar,
+#status-bar #status-info,
+#status-bar #status-info #status-file,
+#status-bar #status-indicators,
+#status-bar #status-indicators #status-overwrite {
+	background-color: @status-bar-background;
+	color: @status-bar-foreground;
+}
+
+/* Toolbar */
+#main-toolbar,
+#main-toolbar #plugin-icons-bar {
+	background-color: @toolbar-background;
+}
+
+/* Title Bar */
+.content #titlebar {
+	background-color: @titlebar-background;
+}
+
+.content #titlebar .nav li a {
+	color: @titlebar-foreground;
+}
+
+/* Main Editor Window */
+// Adds a separator between sidebar and editor content
+.content {
+	border-left: 1px solid @border;
+}
+
+// Sets the main editor background and text color
+.CodeMirror,
+.CodeMirror-scroll {
+	background-color: @background;
+	color: @foreground;
+}
+
+// Styles for code selection
+.CodeMirror-selected {
+	background-color: @selected-background !important;
+}
+
+// Styles line numbers
+.CodeMirror-linenumber {
+	color: @comment;
+}
+
+// Code syntax highlighting
+.cm-comment {
+	color: @comment !important;
+}
+
+.cm-keyword {
+	color: @keyword;
+}
+
+.cm-atom {
+	color: @definition;
+}
+
+.cm-number {
+	color: @number;
+}
+
+span.cm-def {
+	color: @definition;
+}
+
+span.cm-variable {
+	color: @variable;
+}
+
+span.cm-variable-2 {
+	color: @variable2;
+}
+
+span.cm-variable-3 {
+	color: @variable3;
+}
+
+.cm-link,
+.cm-link.cm-variable-2 {
+	color: @link !important;
+}
+
+.cm-string.cm-variable-2.cm-url {
+	color: @link;
+}
+
+.cm-operator {
+	color: @operator;
+}
+
+.cm-string {
+	color: @string;
+}
+
+.cm-string-2 {
+	color: @string2;
+}
+
+.cm-meta {
+	color: @meta;
+}
+
+.cm-builtin {
+	color: @definition;
+}
+
+.cm-tag {
+	color: @tag;
+}
+
+.cm-attribute {
+	color: @attribute;
+}
+
+.cm-header {
+	color: @header;
+}
+
+.cm-hr {
+	color: @comment;
+}
+
+.cm-link {
+	color: @operator;
+}
+
+// Error highlighting
+.cm-error {
+	color: @error;
+	background-color: @error-background;
+}
+
+.cm-qualifier {
+	color: @variable;
+}
+
+.cm-property {
+	color: @property;
+}
+
+.cm-quote {
+	color: @keyword;
+}
+
+.cm-em {
+	color: @definition;
+}
+
+.cm-strong {
+	color: @number;
+}
+
+.cm-image {
+	color: @tag;
+}
+
+.cm-image-marker {
+	color: @definition;
+}
+
+.cm-type {
+	color: @type;
+}
+
+// Styles for matching HTML tags
+.CodeMirror-matchingtag {
+	background-color: @matchingbracket-background;
+	color: @matchingbracket-color !important;
+}
+
+// Enhanced visibility for matching tags in the active line
+.CodeMirror-activeline .CodeMirror-matchingtag {
+	color: @active-matchingbracket-color !important;
+	background-color: @active-matchingbracket-background;
+}
+
+// Styles for matching brackets (parentheses, square brackets, etc.)
+.CodeMirror-matchingbracket {
+	outline: none;
+	border-bottom: 1px solid @matchingbracket-color;
+	color: @matchingbracket-color !important;
+	background-color: @matchingbracket-background;
+}
+
+.CodeMirror-activeline .CodeMirror-matchingbracket {
+	color: @active-matchingbracket-color !important;
+	background-color: @active-matchingbracket-background;
+}
+
+// Code folding marker styling
+.CodeMirror-foldmarker {
+	background-color: @background;
+	color: @foreground;
+	border: none;
+}
+
+.CodeMirror-activeline .CodeMirror-foldmarker {
+	background-color: @activeline-background;
+	color: @activeline-foreground;
+	border: none;
+}
+
+// Active line comment color
+.CodeMirror-activeline .cm-comment {
+	color: @comment-active !important;
+}
+
+// Cursor styling for normal mode
+.CodeMirror .CodeMirror-cursor {
+	border-left: 1px solid @cursor !important;
+}
+
+// Cursor styling for overwrite (insert) mode
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+	border-left: none !important;
+	border-bottom: 1px solid @cursor;
+	width: 1.2ex;
+}
+
+// Gutter styling (area with line numbers)
+.CodeMirror .CodeMirror-gutters {
+	background-color: @gutter-background;
+	border-right: 0;
+}
+
+.CodeMirror-gutter-elt {
+	color: @line-number !important;
+}
+
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+	background-color: @active-gutter-background !important;
+	color: @active-line-number !important;
+}
+
+// Active line background
+.CodeMirror-activeline-background {
+	background-color: @activeline-background !important;
+}
+
+// Styles for search results
+.CodeMirror-searching {
+	background-color: @searching-background !important;
+	color: @searching-foreground !important;
+}
+
+// Highlights the current search match
+.CodeMirror-searching.searching-current-match {
+	background-color: @searching-match-background !important;
+	color: @searching-match-foreground !important;
+}
