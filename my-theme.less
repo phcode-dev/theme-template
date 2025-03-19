@@ -35,7 +35,14 @@
  // Sidebar - Houses file tree and working files
  @sidebar-background: #000;
  @sidebar-foreground: #cdcdcd;
+ @sidebar-active-file-background: #000;
  @sidebar-active-file-foreground: #6bbeff; // Highlights the current working file (Try not to modify unless your color obscure the default color)
+
+ // the toggle buttons in the sidebar for the git branch option and the project option
+ @git-branch-toggle-bg-sidebar: #000;
+ @git-branch-toggle-fg-sidebar: #cdcdcd;
+ @project-dropdown-toggle-bg: #000;
+ @project-dropdown-toggle-fg: #cdcdcd;
  
  // Toolbar - Vertical panel on the right
  @toolbar-background: #000;
@@ -70,7 +77,7 @@
   * These variables control the colors of different code elements in the editor.
   * Customizing these will change how your code looks.
   */
- 
+
  @keyword: #cdcdcd; // Programming keywords like 'function', 'const', 'if', 'for'
  @definition: #cdcdcd; // Function, variable, class names when they're being defined
  @variable: #cdcdcd; // Global/Predefined variables in your code
@@ -90,6 +97,9 @@
  @error: #f7768e; // Text that represents an error in your code
  @error-background: #f7768e1a; // Background highlight for error text
  
+
+
+
  /* ------------------------------------------------------------------- */
  /* Base Styles
   * The following CSS rules implement the theme using the variables defined above.
@@ -116,11 +126,17 @@
  .main-view #sidebar #working-set-list-container .working-set-header-title,
  .main-view #sidebar #working-set-list-container .sidebar-selection,
  .main-view #sidebar #project-files-container,
- .main-view #sidebar #project-files-header,
- .main-view #sidebar #project-files-header #project-dropdown-toggle {
+ .main-view #sidebar #project-files-header
+ {
 	 background-color: @sidebar-background;
  }
- 
+
+.main-view #sidebar #project-files-header #project-dropdown-toggle,
+ .main-view #sidebar #project-files-header #project-dropdown-toggle span {
+	background-color: @project-dropdown-toggle-bg;
+	color: @project-dropdown-toggle-fg;
+}
+
  // Creates a visual separator between working files and project files
  .main-view #sidebar #working-set-list-container {
 	 border-bottom: 1px solid @border;
@@ -134,7 +150,6 @@
  /* Sidebar Text Styling */
  // Sets color for all text elements in the sidebar
  .main-view #sidebar #project-files-container ul li a span,
- .main-view #sidebar #project-files-header #project-dropdown-toggle span,
  .main-view #sidebar #working-set-list-container .working-set-view .working-set-header span,
  .main-view #sidebar #working-set-list-container .working-set-view .open-files-container ul li a span {
 	 color: @sidebar-foreground;
@@ -145,6 +160,22 @@
  .main-view #sidebar #mainNavBar #phcode-io-main-nav {
 	 color: @sidebar-active-file-foreground;
  }
+
+ // Style the background of the currently active file in the file explorer area
+ .main-view #sidebar #project-files-container .jstree-clicked,
+ .main-view #sidebar #project-files-container .filetree-selection-extension{
+	 background-color: @sidebar-active-file-background;
+ }
+
+
+ // For the git branch button that appears in the sidebar
+.main-view #sidebar #project-files-header #git-branch-dropdown-toggle {
+	background-color: @git-branch-toggle-bg-sidebar;
+	color: @git-branch-toggle-fg-sidebar;
+}
+
+
+	
  
  /* Status Bar */
  // Ensures consistent styling across all status bar elements
